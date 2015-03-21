@@ -4,8 +4,21 @@ html {
   font-family: 'Roboto Slab', serif;
 }
 
-[layout=row] {
-  flex-direction: row;
+.main{
+  width: 100%;
+}
+
+section{
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+a {
+  color: #587BF9;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: underline;
 }
 
 .browsehappy {
@@ -15,43 +28,5 @@ html {
   padding: 0.2em 0;
 }
 
-.thumbnail {
-  height: 200px;
-
-  img.pull-right {
-    width: 50px;
-  }
-}
-
-md-toolbar.md-default-theme {
-  background-color: black;
-}
-
-section.jumbotron {
-  margin-bottom: 30px;
-  padding: 1px 30px;
-  background-color: #5aadbb;
-  text-align: center;
-
-  color: white;
-
-  h1 {
-    font-size: 3em;
-  }
-}
-
-.techs {
-  display: flex;
-  flex-flow: row wrap;
-
-  md-card {
-    width: 30%;
-
-    img.pull-right {
-      float: right;
-      width: 50px;
-    }
-  }
-}
 // injector
 // endinjector

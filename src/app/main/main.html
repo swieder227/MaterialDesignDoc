@@ -1,34 +1,34 @@
 <div layout="vertical" layout-fill>
 
-  <md-content>
+  <md-content class="main">
     <header ng-include="'components/navbar/navbar.html'"></header>
 
-    <section class="jumbotron">
-      <h1>'Allo, 'Allo!</h1>
-      <p class="lead">
-        <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-        Always a pleasure scaffolding your apps.
-      </p>
-      <p><a class="btn" ng-href="#">Splendid!</a></p>
+    <section>
+      <h1>Introduction</h1>
+      <p>Material Design Doc demonstrates two ideas: <strong>1.</strong> How to use the Angular Material UI Framework, and <strong>2.</strong> How to create a Style Guide.</p>
+      <br>
+      <h2>What's a UI Framework, and what's a Style Guide?</h2>
+      <div layout="row" layout-sm="column" layout-align="space-between start">
+        <p flex="45" flex-sm="100">UI Frameworks are a collection of modular components that can be added on top of an app. <a href="https://material.angularjs.org/#/" target="_blank">Angular Material</a> implements Google's <a href='http://www.google.com/design/spec/material-design/introduction.html#' target="_blank">Material Design</a> system with the Javascript MVC <a href="https://angularjs.org/" target="_blank">AngularJS</a>.</p>
+        <p flex="45" flex-sm="100">Style Guide are living documents that provide guidelines for the aesthetic, function, and form of a user interface. Here's <a href="http://bradfrost.com/blog/post/style-guides/" target="_blank">more info</a> and <a href="styleguides.io" target="_blank">examples</a>.</p>
+      </div>
+    </section>
+    <hr>
+    <section>
+
     </section>
 
-    <div class="techs" layout-align="center">
-      <md-card ng-repeat="awesomeThing in awesomeThings | orderBy:'rank'">
-        <div class="thumbnail">
-          <img class="pull-right" ng-src="assets/images/{{awesomeThing.logo}}" alt="{{awesomeThing.title}}">
-          <div class="caption">
-            <h3>{{awesomeThing.title}}</h3>
-            <p>{{awesomeThing.description}}</p>
-            <p><a ng-href="{{awesomeThing.url}}">{{awesomeThing.url}}</a></p>
-          </div>
-        </div>
-      </md-card>
-    </div>
-    <footer>
-      <md-toolbar layout="row" layout-align="center center">
-        <p>With ♥ from <a href="https://twitter.com/Swiip">@Swiip</a></p>
-      </md-toolbar>
-    </footer>
+
+
+
+
+    <md-toolbar>
+      <h1 class="md-toolbar-tools">
+        <span>Divider</span>
+      </h1>
+    </md-toolbar>
+
+    <footer ng-include="'components/footerbar/footerbar.html'"></footer>
   </md-content>
 
 </div>

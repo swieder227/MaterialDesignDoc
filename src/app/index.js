@@ -1,6 +1,7 @@
 'use strict';
 
 angular.module('materialStyleGuide', ['ngAnimate', 'ngTouch', 'ngSanitize', 'ui.router', 'ngMaterial'])
+  // UI Router
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {
@@ -11,4 +12,12 @@ angular.module('materialStyleGuide', ['ngAnimate', 'ngTouch', 'ngSanitize', 'ui.
 
     $urlRouterProvider.otherwise('/');
   })
+  // ngMaterial Theme
+  .config(function ($mdThemingProvider) {
+  	$mdThemingProvider.theme('default')
+	    .primaryPalette('red')
+	    .accentPalette('pink')
+	    .backgroundPalette("grey");
+  })
+
 ;
