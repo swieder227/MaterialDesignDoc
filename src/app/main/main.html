@@ -1,34 +1,9 @@
-<div layout="vertical" layout-fill>
+<ng-include src="'components/intro/intro.html'"></ng-include>
 
-  <md-content class="main">
-    <header ng-include="'components/navbar/navbar.html'"></header>
+<ng-include src="'components/installation/installation.html'"></ng-include>
 
-    <section>
-      <h1>Introduction</h1>
-      <p>Material Design Doc demonstrates two ideas: <strong>1.</strong> How to use the Angular Material UI Framework, and <strong>2.</strong> How to create a Style Guide.</p>
-      <br>
-      <h2>What's a UI Framework, and what's a Style Guide?</h2>
-      <div layout="row" layout-sm="column" layout-align="space-between start">
-        <p flex="45" flex-sm="100">UI Frameworks are a collection of modular components that can be added on top of an app. <a href="https://material.angularjs.org/#/" target="_blank">Angular Material</a> implements Google's <a href='http://www.google.com/design/spec/material-design/introduction.html#' target="_blank">Material Design</a> system with the Javascript MVC <a href="https://angularjs.org/" target="_blank">AngularJS</a>.</p>
-        <p flex="45" flex-sm="100">Style Guide are living documents that provide guidelines for the aesthetic, function, and form of a user interface. Here's <a href="http://bradfrost.com/blog/post/style-guides/" target="_blank">more info</a> and <a href="styleguides.io" target="_blank">examples</a>.</p>
-      </div>
-    </section>
-    <hr>
-    <section>
+<ng-include src="'components/typography/typography.html'"></ng-include>
 
-    </section>
+<ng-include src="'components/colors/colors.html'"></ng-include>
 
-
-
-
-
-    <md-toolbar>
-      <h1 class="md-toolbar-tools">
-        <span>Divider</span>
-      </h1>
-    </md-toolbar>
-
-    <footer ng-include="'components/footerbar/footerbar.html'"></footer>
-  </md-content>
-
-</div>
+<footer ng-include="'components/footerbar/footerbar.html'"></footer>

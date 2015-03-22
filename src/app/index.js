@@ -16,7 +16,7 @@ angular.module('materialStyleGuide', ['ngAnimate', 'ngTouch', 'ngSanitize', 'ui.
   .config(function ($mdThemingProvider) {
   	$mdThemingProvider.theme('default')
 	    .primaryPalette('red')
-	    .accentPalette('pink')
+	    .accentPalette('indigo')
 	    .backgroundPalette("grey");
   })
 

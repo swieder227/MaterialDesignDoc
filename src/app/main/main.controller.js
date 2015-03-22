@@ -2,6 +2,8 @@
 
 angular.module('materialStyleGuide')
   .controller('MainCtrl', function ($scope) {
+
+    // Used for Testing
     $scope.awesomeThings = [
       {
         'title': 'AngularJS',
